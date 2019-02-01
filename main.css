@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+h2{
+    margin-bottom: 1.5rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.app{
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    height: 100vh;
+}
+
+/* SIDEBAR */
+.app__logo{
+    font-size: 2rem;
+    margin: 2rem auto;
+}
+
+.app__sidebar{
+    background: #111;
+    color: #fff;
+    padding: 2rem;
+}
+
+.side-nav__link{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.2rem;
+}
+
+.sticky{
+    position: sticky;
+    top: 10px;
+}
+
+/* MAIN AREA */
+
+.app__main{
+    padding: 3rem;
+    background-image: linear-gradient(to right, rgb(116, 127, 116), rgb(46, 62, 46));
+
+    padding-bottom: 160px;
+}
+
+/* GRID LIST */
+
+.grid-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.grid-list__item{
+    padding: 2rem;
+    background: orange;
+    color: #fff;
+    font-size: 2rem;
+    border: 2px solid orangered;
+    min-height: 260px;
+
+    
+}
+
+.album-cover{
+    max-width: 100%;
+}
+
+/* CONTROLS AREA */
+
+.app__controls{
+    background: #000;
+    color: #fff;
+    padding: 2rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.control-btn{
+    width: 50px;
+    height: 50px;
+    color: transparent;
+    background: url(./icons/play.svg) no-repeat center;
+    background-size: 50px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.control-btn--pause{
+    background: url(./icons/pause.svg) no-repeat center;
+    background-size: 50px;
+}

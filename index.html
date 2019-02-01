@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Music Fire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    
+    <section class="app">
+
+        <aside class="app__sidebar">
+            <div class="sticky">
+                <h1 class="app__logo">Music Fire</h1>
+                <nav class="side-nav">
+                    <a class="side-nav__link" href="">Item #1</a>
+                    <a class="side-nav__link" href="">Item #2</a>
+                    <a class="side-nav__link" href="">Item #3</a>
+                    <a class="side-nav__link" href="">Item #4</a>
+                </nav>
+            </div>
+        </aside>
+        <main class="app__main">
+            
+            <h2><i class="fas fa-headphones"></i> Ulubione kawałki</h2>
+            <div class="grid-list">
+                <article data-trackname="Love me do" data-trackfile="audio1.mp3" class="grid-list__item">Track #1</article>
+                <article data-trackname="Love me tender" data-trackfile="audio2.mp3" class="grid-list__item">Track #2</article>
+                <article data-trackname="Hello " data-trackfile="audio3.mp3" class="grid-list__item">Track #3</article>
+                <article data-trackname="Xmass Song"  data-trackfile="audio4.mp3" class="grid-list__item">Track #4</article>
+                <article data-trackname="Should i stay" data-trackfile="audio5.mp3" class="grid-list__item">Track #5</article>
+                <article data-trackname="November rain" data-trackfile="audio6.mp3" class="grid-list__item">Track #6</article>
+                <article data-trackname="Die die die" data-trackfile="audio7.mp3" class="grid-list__item">Track #7</article>
+                <article data-trackname="Knock knock" data-trackfile="audio8.mp3" class="grid-list__item">Track #8</article>
+            </div>
+
+            <h2>Ulubione Płyty</h2>
+            <div class="grid-list">
+                <article data-trackfile="audio2.mp3" class="grid-list__item"><img class="album-cover" src="./foto/1.jpg"> <p>Album 1</p></article>
+                <article data-trackfile="audio3.mp3" class="grid-list__item"><img class="album-cover" src="./foto/2.jpg"> <p>Album 2</p></article>
+                <article data-trackfile="audio4.mp3" class="grid-list__item"><img class="album-cover" src="./foto/3.jpg"> <p>Album 3</p></article>
+                <article data-trackfile="audio1.mp3" class="grid-list__item"><img class="album-cover" src="./foto/4.jpg"> <p>Album 4</p></article>
+                <article data-trackfile="audio5.mp3" class="grid-list__item"><img class="album-cover" src="./foto/5.jpg"> <p>Album 5</p></article>
+                <article data-trackfile="audio6.mp3" class="grid-list__item"><img class="album-cover" src="./foto/6.jpg"> <p>Album 6</p></article>
+                <article data-trackfile="audio7.mp3" class="grid-list__item"><img class="album-cover" src="./foto/7.jpg"> <p>Album 7</p></article>
+                <article data-trackfile="audio8.mp3" class="grid-list__item"><img class="album-cover" src="./foto/8.jpg"> <p>Album 8</p></article>
+            </div>
+
+        </main>
+
+    </section>
+    <footer class="app__controls">
+        <h4 id="showTrackName">Piosenka</h4>
+        <button id="playPause" class="control-btn" >Play / Pause</button>
+        <h4></h4>
+    </footer>
+
+    <audio id="audioPlayer"  src="./audio-files/audio1.mp3">
+        TWOJA PRZEGLĄDARKA JEST DO BANI
+    </audio>
+    
+</body>
+<script src="main.js"></script>
+</html>
